@@ -16,7 +16,7 @@ def main():
                        help='model directory to load stored checkpointed models from')
     parser.add_argument('-n', type=int, default=2000,
                        help='number of words to sample')
-    parser.add_argument('--prime', type=str, default='My dumb friend who I met in Central Park made a new boyfriend',
+    parser.add_argument('--prime', type=str, default='Do you know that my Italian grandma looks hotter than Angelina Jolie',
                        help='prime text')
     parser.add_argument('--pick', type=int, default=2,
                        help='1 = weighted pick, 2 = beam search pick')
