@@ -16,7 +16,7 @@ def main():
                        help='model directory to load stored checkpointed models from')
     parser.add_argument('-n', type=int, default=2000,
                        help='number of words to sample')
-    parser.add_argument('--prime', type=str, default='What have you got planned for today?',
+    parser.add_argument('--prime', type=str, default='My dumb friend who I met in Central Park made a new boyfriend',
                        help='prime text')
     parser.add_argument('--pick', type=int, default=2,
                        help='1 = weighted pick, 2 = beam search pick')
@@ -24,7 +24,7 @@ def main():
                        help='width of the beam search')
     parser.add_argument('--sample', type=int, default=1,
                        help='0 to use max at each timestep, 1 to sample at each timestep, 2 to sample on spaces')
-    parser.add_argument('--count', '-c', type=int, default=20,
+    parser.add_argument('--count', '-c', type=int, default=2,
                        help='number of samples to print')
     parser.add_argument('--quiet', '-q', default=False, action='store_true',
                        help='suppress printing the prime text (default false)')
